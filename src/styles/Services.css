@@ -1,0 +1,134 @@
+section#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: var(--black);
+}
+
+#services-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 5px;
+    border-radius: 5px;
+    width: 300px;
+    height: 250px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.service-description {
+    font-weight: 400;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.service-price {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.service-duration {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    #services {
+        padding: 20px;
+    }
+
+    .service {
+        width: 50%;
+        height: auto;
+        padding: 5px;
+        margin: 2.5px 0;
+    }
+
+    #services-title {
+        font-size: 1.5rem;
+    }
+
+    .services-container {
+        gap: 5px;
+    }
+
+    .service-title {
+        font-size: 0.9rem;
+    }
+
+    .service-description {
+        font-size: 0.7rem;
+    }
+
+    .service-price {
+        font-size: 0.8rem;
+    }
+
+    .service-duration {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #services {
+        padding: 5px;
+    }
+
+    .service {
+        height: auto;
+    }
+
+    #services-title {
+        font-size: 1.2rem;
+    }
+
+    .services-container {
+        gap: 2px;
+    }
+
+    .service-title {
+        font-size: 0.8rem;
+    }
+
+    .service-description {
+        font-size: 0.6rem;
+    }
+
+    .service-price {
+        font-size: 0.7rem;
+    }
+
+    .service-duration {
+        font-size: 0.6rem;
+    }
+}

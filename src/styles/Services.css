@@ -30,7 +30,7 @@ section#services {
     text-align: center;
     gap: 5px;
     border-radius: 5px;
-    width: 300px;
+    width: 350px;
     height: 250px;
     background-color: var(--white);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

@@ -10,6 +10,12 @@ header {
     z-index: 2;
 }
 
+.header-title-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 #header-title {
     font-size: 2rem;
     font-weight: 600;
@@ -17,12 +23,8 @@ header {
     justify-content: center;
     align-items: center;
     gap: 5px;
-}
-
-.header-title-container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    text-decoration: none;
+    color: var(--black);
 }
 
 .header-title-container .header-icon {

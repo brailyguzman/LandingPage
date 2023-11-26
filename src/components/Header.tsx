@@ -13,11 +13,11 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
     return (
         <header className="header">
             <div className="header-title-container">
-                <h1 id="header-title">
+                <a id="header-title" href="#home">
                     Syntax
                     <FaCar className="header-icon" />
                     <FaWater className="header-icon" />
-                </h1>
+                </a>
             </div>
 
             <div className="mobile-navigation">
@@ -29,7 +29,7 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="hamburger-menu"
                     >
-                        <FaBars className="hamburger-icon"/>
+                        <FaBars className="hamburger-icon" />
                     </button>
                     {isMenuOpen && (
                         <div className="mobile-menu">

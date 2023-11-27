@@ -39,33 +39,42 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                                     setActiveSection('home');
                                     setIsMenuOpen(false);
                                 }}
+                                className={`${
+                                    activeSection === 'home' && 'active'
+                                }`}
                             >
                                 Home
                             </a>
                             <a
                                 href="#about"
                                 onClick={() => {
-                                    setActiveSection('about');
                                     setIsMenuOpen(false);
                                 }}
+                                className={`${
+                                    activeSection === 'about' && 'active'
+                                }`}
                             >
                                 About
                             </a>
                             <a
                                 href="#services"
                                 onClick={() => {
-                                    setActiveSection('services');
                                     setIsMenuOpen(false);
                                 }}
+                                className={`${
+                                    activeSection === 'services' && 'active'
+                                }`}
                             >
                                 Services
                             </a>
                             <a
                                 href="#contact"
                                 onClick={() => {
-                                    setActiveSection('contact');
                                     setIsMenuOpen(false);
                                 }}
+                                className={`${
+                                    activeSection === 'contact' && 'active'
+                                }`}
                             >
                                 Contact
                             </a>
@@ -83,7 +92,6 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                     className={`header-link ${
                         activeSection === 'home' && 'active'
                     }`}
-                    onClick={() => setActiveSection('home')}
                 >
                     Home
                 </a>
@@ -92,7 +100,6 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                     className={`header-link ${
                         activeSection === 'about' && 'active'
                     }`}
-                    onClick={() => setActiveSection('about')}
                 >
                     About
                 </a>
@@ -101,7 +108,6 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                     className={`header-link ${
                         activeSection === 'services' && 'active'
                     }`}
-                    onClick={() => setActiveSection('services')}
                 >
                     Services
                 </a>
@@ -110,7 +116,6 @@ const Header = ({ activeSection, setActiveSection }: HeaderProps) => {
                     className={`header-link ${
                         activeSection === 'contact' && 'active'
                     }`}
-                    onClick={() => setActiveSection('contact')}
                 >
                     Contact
                 </a>

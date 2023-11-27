@@ -118,4 +118,9 @@ header {
         width: 100%;
         text-align: center;
     }
+
+    .mobile-menu a.active {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+    }
 }

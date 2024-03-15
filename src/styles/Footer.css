@@ -3,9 +3,16 @@
     color: var(--white);
     padding: 20px;
     text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .footer p {
     font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .footer p {
+        font-size: 1.2rem;
+    }
 }

@@ -4,10 +4,11 @@ header {
     align-items: center;
     padding: 20px 40px;
     background-color: var(--white);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 2;
+    z-index: 1000;
 }
 
 .header-title-container {

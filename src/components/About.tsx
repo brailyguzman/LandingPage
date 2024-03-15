@@ -25,6 +25,7 @@ const About = () => {
                             stars={reviews.stars}
                             comment={reviews.comment}
                             profilePicture={reviews.profilePicture}
+                            key={reviews.id}
                         />
                     ))}
                 </div>
